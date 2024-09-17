@@ -105,19 +105,22 @@
 // }
 // console.log(color);
 
- const person =  {
-     name:['bob','smith'],
-     age:32,
-    bio:function(){
-        console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old `);
+
+
+//Objects 
+//  const person =  {
+//      name:['bob','smith'],
+//      age:32,
+//     bio:function(){
+//         console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old `);
         
-    },
-    introdueSelf:function(){
- console.log(`Hi! I'm ${this.name[0]}`);
+//     },
+//     introdueSelf:function(){
+//  console.log(`Hi! I'm ${this.name[0]}`);
 
-    }
+//     }
 
- }
+//  }
 // console.log(person);
 
 // const person ={
@@ -157,14 +160,11 @@
 // function Person(name){
 //     this.name = name
 //     this.introdueSelf = function(){
-//         console.log(`Hi I'm ${this.name}`);
-        
+//         console.log(`Hi I'm ${this.name}`);       
 //     }
 // }
 // const salva= new Person('salva')
 // salva.introdueSelf()
-
-
 // const cat = {
 //     name : 'Bertie',
 //     breed : 'Cymric',
@@ -173,8 +173,49 @@
 //       console.log('Meow!');
 //     }
 //   }
-
 //   console.log(cat);
+
+
+//string and their method
+// const browserType = 'mozilla is very good browser'
+// if (browserType.includes('zilla')) {
+//     console.log('Found zilla');  
+// }else {
+//     console.log('No zilla here!');  
+// }
+// if (browserType.endsWith('zilla')) {
+//     console.log('Found zilla');    
+// }else {
+//     console.log('No zilla here!');
+ // }
+// console.log(browserType);
+// console.log(browserType[0]);//m
+// console.log(browserType[1]);//o
+// console.log(browserType[2]);//z
+// console.log(browserType[3]);//i
+// console.log(browserType[4]);//l
+// const tagLine = 'MDN - Resource for developers , by developer'
+// console.log(tagLine.indexOf('developer'));
+// const firstOccurence = tagLine.indexOf('developers')
+// const secondOccurence = tagLine.indexOf('developers',firstOccurence + 1)
+// console.log(firstOccurence)
+// console.log(secondOccurence);
+// let browserType  = 'mozilla'//change the value
+// browserType = browserType.replace('moz','van')//vanilla
+// // const updated = browserType.replace('moz','van')
+// console.log(browserType);
+
+// const radData = "My NaMe Is MuD";
+// console.log(radData.toLowerCase());
+// console.log(radData.toUpperCase());
+
+
+
+
+
+
+
+
   
 
 
