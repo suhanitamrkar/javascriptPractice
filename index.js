@@ -23,25 +23,90 @@
 // console.log(student['age']);
 // console.log(student.name);
 
-const product= {
-    item:'pen',
-    name:'Parkar Jotter',
-    rating: 3,
-    deal: true,
-    price:200,
-    offer: true
+// const product= {
+//     item:'pen',
+//     name:'Parkar Jotter',
+//     rating: 3,
+//     deal: true,
+//     price:200,
+//     offer: true
 
+// }
+// const profile ={
+//     name:'sharadha',
+//     posts:195,
+//     followers:89433,
+//     description:"para",
+
+// }
+// console.log(product);
+// console.log(profile.description);
+
+// Arithmetic Operators
+// let a = 4;
+// let b = 5;
+// let c = a + b;
+// console.log("a + b =", a + b);
+// console.log("a - b =", a - b);
+// console.log("a * b =", a * b);
+// console.log("a / b =", a / b);
+// console.log("a % b =", a % b);
+// console.log("a ** b =", a ** b);
+// console.log('a++ =' ,a++);
+// console.log('a =' ,a);
+// console.log('a-- =' ,a--);
+// console.log('a =' ,a);
+// console.log('--a =' ,--a);
+
+//As9gment operators
+// let a = 4;
+// let b = 5;
+// a /= 5
+// a += 5
+// a ** 5
+// console.log('a = ',a);
+// console.log('a = ',a);
+// console.log('a = 4',a);
+
+
+//Comparison operators
+// let a = 3
+// let b = 2
+// console.log("3 == 2", a==b);
+// console.log("3 != 3", a!=b);
+
+//logical operators
+// let a =6 
+
+// let b=4
+// let cond1 = a > b
+// let cond2 = a ===6
+// console.log('cond1 && cond2',cond1 && cond2);
+
+//condition statements
+// let age = 24
+
+// if (age >= 18) {
+//     console.log('you can vote');
+    
+// }
+// if (age < 18) {
+//     console.log('you can not vote');
+    
+// }
+
+let mode = 'dark'
+let color
+if (mode === 'dark') {
+    color = 'black'
 }
-const profile ={
-    name:'sharadha',
-    posts:195,
-    followers:89433,
-    description:"para",
-
-
+if (mode === 'light') {
+    color = 'white'
 }
-console.log(product);
-console.log(profile.description);
+console.log(color);
+
+
+
 
 
 
