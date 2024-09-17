@@ -95,18 +95,87 @@
     
 // }
 
-let mode = 'dark'
-let color
-if (mode === 'dark') {
-    color = 'black'
-}
-if (mode === 'light') {
-    color = 'white'
-}
-console.log(color);
+// let mode = 'dark'
+// let color
+// if (mode === 'dark') {
+//     color = 'black'
+// }
+// if (mode === 'light') {
+//     color = 'white'
+// }
+// console.log(color);
+
+ const person =  {
+     name:['bob','smith'],
+     age:32,
+    bio:function(){
+        console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old `);
+        
+    },
+    introdueSelf:function(){
+ console.log(`Hi! I'm ${this.name[0]}`);
+
+    }
+
+ }
+// console.log(person);
+
+// const person ={
+//     name: {
+//         first:'suhani',
+//         last:'tamrkar',
+//     },
+//     age:32,
+//     education:{
+//         secondary:'govt.school',
+//         primary:'govt.school',
+//         college:'girls college',
+//     }
 
 
+// }
+// person['education'] = 'study'
+// console.log(person.education.college);
+// console.log(person.education.secondary);
+// console.log(person.education.primary);
+// console.log(person);
 
+// function createPerson(name){
+//     const obj={}
+//     obj.name = name
+//     obj.introdueSelf= function(){
+//         console.log(`Hi ! I'm ${this.name}`);
+        
+//     }
+//     return obj
+// }
+// console.log(createPerson);
+// const salva = createPerson('salva')
+// salva.introdueSelf()
+// const frankie = createPerson('Frankie')
+// frankie.introdueSelf()
+// function Person(name){
+//     this.name = name
+//     this.introdueSelf = function(){
+//         console.log(`Hi I'm ${this.name}`);
+        
+//     }
+// }
+// const salva= new Person('salva')
+// salva.introdueSelf()
+
+
+// const cat = {
+//     name : 'Bertie',
+//     breed : 'Cymric',
+//     color : 'white',
+//     greeting: function() {
+//       console.log('Meow!');
+//     }
+//   }
+
+//   console.log(cat);
+  
 
 
 
