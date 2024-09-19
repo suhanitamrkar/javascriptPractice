@@ -212,7 +212,54 @@
 
 
 
+//loops
+// for (let count = 0; count <= 5; count++) {
+//   console.log('count',count);
+  
+    
+// }
+// let sum = 0
+// let n =7 
+// for (let i = 0; i <= n; i++) {
+//     sum = sum + i
+    
+// }
+// console.log('sum=',sum);
+// let i=1
+// while (i<=5) {
+//     console.log('suhani');
+//     i++
+    
+// }
 
+// let student = {
+//   name : 'Rahul kumar',
+//   age:20,
+//   cgpa:7.5,
+//   isPass:true
+
+// }
+// for(let key in student){
+// console.log('key=',key,'value=',student[key]);
+
+// }
+
+// for (let count = 1; count <= 100; count++) {
+//      if(count % 2 !== 0){//for even !for odd number
+// console.log("this is a even number",count);
+
+//      }
+      
+        
+//      }
+
+// let gameNum = 23
+// let userNum= prompt('Guess the game number')
+// // console.log(userNum);
+// while (userNum != gameNum) {
+//     userNum= prompt('You entered wrong number  Guess the game number')
+// }
+// console.log('congratulation , you entered the right number');
 
 
 
