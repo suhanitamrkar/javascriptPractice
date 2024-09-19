@@ -274,7 +274,6 @@
 // }
 // let output = `the cost of ${obj.item} is ${obj.price} ruppes`//we can use it beacuse this is easy to write
 // console.log(output);
-
 //console.log('the cost of ',obj.item,'is',obj.price);
 
 //template literal
@@ -282,7 +281,6 @@
 // console.log( specialString);
 // let str= 'suhani \ntamrkar'//output will be 15 not 16
 // console.log(str.length);
-
 // console.log('suhani \ttamrkar');
 //  let str = 'suhani'
 //  console.log(str.toUpperCase());
@@ -291,18 +289,60 @@
 //  console.log(str.slice(2));
 // console.log(str.replace('s','t'));
 // console.log(str.replaceAll('suhani','tamrkar'));
-
-
-let userName = prompt('Enter your full name')
-let genertName = `your userName is @${userName}${userName.length}.
-`
-console.log(genertName.trim());
+// let userName = prompt('Enter your full name')
+// let genertName = `your userName is @${userName}${userName.length}.
+// `
+// console.log(genertName.trim());
 
 
 
 
 
+ //Arrays 
+//  let marks = [23,23,35,65,67,64,45,32,34,34]
+//  console.log(marks[0]);
+//  let heroes = ['ironmen','thor','hulk','shaktiman','spiderman']
+//  console.log(heroes[0]);
+//  for (let index = 0; index < heroes.length; index++) {
+//    console.log(heroes[index]);
+//     ;
+    
+//  }
+
+//  for(let item of heroes){
+//     console.log(item);
+    
+//  }
+//  let cities = ['Delhi','Mumbai','Indore','Jabalpur']
+//  for(let el of cities){
+//     console.log(el.toUpperCase());
+    
+//  }
  
+// let marks = [85,97,44,37,76,60]
+
+
+//  let sum = 85+97+44+37+76+60
+// console.log(sum/marks.length);
+// let price= [250,645,300,900,50]
+// let idx = 0
+// for(let val of price){
+//     console.log(`Value at index ${idx} = ${val}`);
+//     let offer = val / 10
+//     price[idx] = price[idx] - offer
+//     console.log(`value after offer = ${price[idx]}`);
+    
+//     idx++
+// }
+
+
+//Arrays  method
+let veggeis = ['potato','tamato','other']
+console.log(veggeis.push('chips'));
+console.log(veggeis.pop('potato'));
+
+
+
 
 
 
