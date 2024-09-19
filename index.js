@@ -263,6 +263,53 @@
 
 
 
+//strings
+// let str = 'suhani'
+// console.log(str.length);
+// console.log(str[3]);//a
+
+// let obj = {
+//     item :'pen',
+//     price:23
+// }
+// let output = `the cost of ${obj.item} is ${obj.price} ruppes`//we can use it beacuse this is easy to write
+// console.log(output);
+
+//console.log('the cost of ',obj.item,'is',obj.price);
+
+//template literal
+// let specialString = `This is template literal ${4+5+9}`
+// console.log( specialString);
+// let str= 'suhani \ntamrkar'//output will be 15 not 16
+// console.log(str.length);
+
+// console.log('suhani \ttamrkar');
+//  let str = 'suhani'
+//  console.log(str.toUpperCase());
+//  console.log(str.toLowerCase());
+//  console.log(str.trim());
+//  console.log(str.slice(2));
+// console.log(str.replace('s','t'));
+// console.log(str.replaceAll('suhani','tamrkar'));
+
+
+let userName = prompt('Enter your full name')
+let genertName = `your userName is @${userName}${userName.length}.
+`
+console.log(genertName.trim());
+
+
+
+
+
+ 
+
+
+
+
+
+
+
   
 
 
