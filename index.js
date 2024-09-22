@@ -325,60 +325,129 @@
 // console.log(veggeis);
 
 //function
-function myFunction(msg) {
-  console.log(msg);
-}
-myFunction("hello this is suhani"); //msg is argument
+// function myFunction(msg) {
+//   console.log(msg);
+// }
+// myFunction("hello this is suhani"); //msg is argument
 
-function sum(a, b) {
-  // s=a+b
-  // return s
-  console.log(a + b);
-}
-sum(23, 32);
+// function sum(a, b) {
+//   // s=a+b
+//   // return s
+//   console.log(a + b);
+// }
+// sum(23, 32);
 
-const mul = (a, b) => {
-  console.log(a + b);
+// const mul = (a, b) => {
+//   console.log(a + b);
 
-  return a + b;
-};
-mul(550, 656);
+//   return a + b;
+// };
+// mul(550, 656);
 
-const printHello = () => {
-  console.log("hello");
-};
+// const printHello = () => {
+//   console.log("hello");
+// };
 
-function countVowel(str) {
-  let count = 0;
-  for (const char of str) {
-    if (
-      char === "a" ||
-      char === "i" ||
-      char === "o" ||
-      char === "e" ||
-      char === "u"
-    ) {
-      count++;
+// function countVowel(str) {
+//   let count = 0;
+//   for (const char of str) {
+//     if (
+//       char === "a" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "e" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//    ;
+//   }
+
+//   console.log(count);
+// }
+// const countVow =  (str) =>{
+// let count = 0
+// for (const char of str) {
+//     if (
+//       char === "a" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "e" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//    ;
+//   }
+
+//   console.log(count);
+// }
+let boxes = document.querySelectorAll(".box");
+let resetBtn = document.querySelector("#reset-btn");
+let newGameBtn = document.querySelector("#newBtm");
+let msg = document.querySelector(".msg");
+
+let trunO = true;
+const winPatterns = [
+  [0, 1, 2],
+  [0, 3, 6],
+  [0, 4, 8],
+  [1, 4, 7],
+  [2, 5, 8],
+  [2, 4, 6],
+  [3, 4, 5],
+  [6, 7, 8],
+];
+
+boxes.forEach((box) => {
+  box.addEventListener("click", () => {
+   
+    if (trunO) {
+      box.innerText = "O";
+      trunO = false;
+    } else {
+      box.innerText = "X";
+      trunO = true;
     }
-   ;
-  }
+    box.disabled = true;
+    checkWinner();
+  });
+});
 
-  console.log(count);
-}
-const countVow =  (str) =>{
-let count = 0
-for (const char of str) {
-    if (
-      char === "a" ||
-      char === "i" ||
-      char === "o" ||
-      char === "e" ||
-      char === "u"
-    ) {
-      count++;
+
+
+const checkWinner = () => {
+  for (let pattern of winPatterns) {
+    let pos1 = boxes[pattern[0]].innerText;
+    let pos2 = boxes[pattern[1]].innerText;
+    let pos3 = boxes[pattern[2]].innerText;
+    if (pos1 != "" && pos2 != "" && pos3 != "") {
+      if (pos1 === pos2 && pos2 === pos3) {
+      
+        showWinner(pos1);
+      }
     }
-   ;
   }
+};
+const disabledBoxes = () => {
+  for (let box of boxes) {
+    box.disabled = true;
+  }
+};
+const showWinner = (winner) => {
+  msg.innerText = `congratulation , winner is ${winner}`;
+  disabledBoxes();
+};
 
-  console.log(count);
-}
+const enableBoxes = () => {
+  for (let box of boxes) {
+    box.disabled = false;
+    box.innerText = "";
+  }
+};
+const resetGame = () => {
+  trunO = true;
+  enableBoxes();
+};
+newGameBtn.addEventListener("click", resetGame);
+resetBtn.addEventListener("click", resetGame);
