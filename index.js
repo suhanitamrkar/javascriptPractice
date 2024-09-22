@@ -68,7 +68,6 @@
 // console.log('a = ',a);
 // console.log('a = 4',a);
 
-
 //Comparison operators
 // let a = 3
 // let b = 2
@@ -76,7 +75,7 @@
 // console.log("3 != 3", a!=b);
 
 //logical operators
-// let a =6 
+// let a =6
 
 // let b=4
 // let cond1 = a > b
@@ -88,11 +87,11 @@
 
 // if (age >= 18) {
 //     console.log('you can vote');
-    
+
 // }
 // if (age < 18) {
 //     console.log('you can not vote');
-    
+
 // }
 
 // let mode = 'dark'
@@ -105,15 +104,13 @@
 // }
 // console.log(color);
 
-
-
-//Objects 
+//Objects
 //  const person =  {
 //      name:['bob','smith'],
 //      age:32,
 //     bio:function(){
 //         console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old `);
-        
+
 //     },
 //     introdueSelf:function(){
 //  console.log(`Hi! I'm ${this.name[0]}`);
@@ -135,7 +132,6 @@
 //         college:'girls college',
 //     }
 
-
 // }
 // person['education'] = 'study'
 // console.log(person.education.college);
@@ -148,7 +144,7 @@
 //     obj.name = name
 //     obj.introdueSelf= function(){
 //         console.log(`Hi ! I'm ${this.name}`);
-        
+
 //     }
 //     return obj
 // }
@@ -160,7 +156,7 @@
 // function Person(name){
 //     this.name = name
 //     this.introdueSelf = function(){
-//         console.log(`Hi I'm ${this.name}`);       
+//         console.log(`Hi I'm ${this.name}`);
 //     }
 // }
 // const salva= new Person('salva')
@@ -175,19 +171,18 @@
 //   }
 //   console.log(cat);
 
-
 //string and their method
 // const browserType = 'mozilla is very good browser'
 // if (browserType.includes('zilla')) {
-//     console.log('Found zilla');  
-// }else {
-//     console.log('No zilla here!');  
-// }
-// if (browserType.endsWith('zilla')) {
-//     console.log('Found zilla');    
+//     console.log('Found zilla');
 // }else {
 //     console.log('No zilla here!');
- // }
+// }
+// if (browserType.endsWith('zilla')) {
+//     console.log('Found zilla');
+// }else {
+//     console.log('No zilla here!');
+// }
 // console.log(browserType);
 // console.log(browserType[0]);//m
 // console.log(browserType[1]);//o
@@ -209,27 +204,23 @@
 // console.log(radData.toLowerCase());
 // console.log(radData.toUpperCase());
 
-
-
-
 //loops
 // for (let count = 0; count <= 5; count++) {
 //   console.log('count',count);
-  
-    
+
 // }
 // let sum = 0
-// let n =7 
+// let n =7
 // for (let i = 0; i <= n; i++) {
 //     sum = sum + i
-    
+
 // }
 // console.log('sum=',sum);
 // let i=1
 // while (i<=5) {
 //     console.log('suhani');
 //     i++
-    
+
 // }
 
 // let student = {
@@ -249,8 +240,7 @@
 // console.log("this is a even number",count);
 
 //      }
-      
-        
+
 //      }
 
 // let gameNum = 23
@@ -260,8 +250,6 @@
 //     userNum= prompt('You entered wrong number  Guess the game number')
 // }
 // console.log('congratulation , you entered the right number');
-
-
 
 //strings
 // let str = 'suhani'
@@ -294,11 +282,7 @@
 // `
 // console.log(genertName.trim());
 
-
-
-
-
- //Arrays 
+//Arrays
 //  let marks = [23,23,35,65,67,64,45,32,34,34]
 //  console.log(marks[0]);
 //  let heroes = ['ironmen','thor','hulk','shaktiman','spiderman']
@@ -306,21 +290,20 @@
 //  for (let index = 0; index < heroes.length; index++) {
 //    console.log(heroes[index]);
 //     ;
-    
+
 //  }
 
 //  for(let item of heroes){
 //     console.log(item);
-    
+
 //  }
 //  let cities = ['Delhi','Mumbai','Indore','Jabalpur']
 //  for(let el of cities){
 //     console.log(el.toUpperCase());
-    
-//  }
- 
-// let marks = [85,97,44,37,76,60]
 
+//  }
+
+// let marks = [85,97,44,37,76,60]
 
 //  let sum = 85+97+44+37+76+60
 // console.log(sum/marks.length);
@@ -331,26 +314,71 @@
 //     let offer = val / 10
 //     price[idx] = price[idx] - offer
 //     console.log(`value after offer = ${price[idx]}`);
-    
+
 //     idx++
 // }
 
+// //Arrays  method
+// let veggeis = ['potato','tamato','other']
+// console.log(veggeis.push('chips'));
+// // console.log(veggeis.pop('potato'));
+// console.log(veggeis);
 
-//Arrays  method
-let veggeis = ['potato','tamato','other']
-console.log(veggeis.push('chips'));
-console.log(veggeis.pop('potato'));
+//function
+function myFunction(msg) {
+  console.log(msg);
+}
+myFunction("hello this is suhani"); //msg is argument
 
+function sum(a, b) {
+  // s=a+b
+  // return s
+  console.log(a + b);
+}
+sum(23, 32);
 
+const mul = (a, b) => {
+  console.log(a + b);
 
+  return a + b;
+};
+mul(550, 656);
 
+const printHello = () => {
+  console.log("hello");
+};
 
+function countVowel(str) {
+  let count = 0;
+  for (const char of str) {
+    if (
+      char === "a" ||
+      char === "i" ||
+      char === "o" ||
+      char === "e" ||
+      char === "u"
+    ) {
+      count++;
+    }
+   ;
+  }
 
+  console.log(count);
+}
+const countVow =  (str) =>{
+let count = 0
+for (const char of str) {
+    if (
+      char === "a" ||
+      char === "i" ||
+      char === "o" ||
+      char === "e" ||
+      char === "u"
+    ) {
+      count++;
+    }
+   ;
+  }
 
-
-
-
-  
-
-
-
+  console.log(count);
+}
