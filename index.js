@@ -110,20 +110,32 @@
     
 // })
 
-console.log('hello');
+// console.log('hello');
 
-async function hello(params) {
-    console.log('hello');
+// async function hello(params) {
+//     console.log('hello');
     
-}
-function api(){
-    return new Promise ((resolve,reject)=>{
-       setTimeout(() => {
-        console.log('wheather data');
-        resolve(200)
-       }, 2000);
-    })
-}
-async function getWheatherData(){
-await api()
-} 
+// }
+// function api(){
+//     return new Promise ((resolve,reject)=>{
+//        setTimeout(() => {
+//         console.log('wheather data');
+//         resolve(200)
+//        }, 2000);
+//     })
+// }
+// async function getWheatherData(){
+// await api()
+// } 
+// const URL= 'https://cat-fact.herokuapp.com/users'
+// let promise =  fetch(URL)
+// console.log('promise',promise);
+
+const email = document.getElementById('mail')
+email.addEventListener('input',(Event) =>{
+    if(email.validity.typeMismatch){
+        email.setCustomValidity('I am expecting an email address')
+    }else{
+        email.setCustomValidity('')
+    }
+})
