@@ -131,11 +131,29 @@
 // let promise =  fetch(URL)
 // console.log('promise',promise);
 
-const email = document.getElementById('mail')
-email.addEventListener('input',(Event) =>{
-    if(email.validity.typeMismatch){
-        email.setCustomValidity('I am expecting an email address')
-    }else{
-        email.setCustomValidity('')
+// const email = document.getElementById('mail')
+// email.addEventListener('input',(Event) =>{
+//     if(email.validity.typeMismatch){
+//         email.setCustomValidity('I am expecting an email address')
+//     }else{
+//         email.setCustomValidity('')
+//     }
+// })
+// let is_array = function (input){
+//     if(toString.call(input) === "[object Array]")
+//         return true
+//     return false
+// }
+// console.log(is_array('w3resource'));
+// console.log(is_array([1,2,3,4,0]))
+// console.log('hiih thifgfdg');
+
+let n =5
+let string = ''
+for (let i = 0; i < n; i++) {
+    for(let j = 0;j<n;j++){
+        string += '*'
     }
-})
+    string += '\n'
+}
+console.log(string);
