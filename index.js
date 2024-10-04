@@ -382,72 +382,118 @@
 
 //   console.log(count);
 // }
-let boxes = document.querySelectorAll(".box");
-let resetBtn = document.querySelector("#reset-btn");
-let newGameBtn = document.querySelector("#newBtm");
-let msg = document.querySelector(".msg");
+// let boxes = document.querySelectorAll(".box");
+// let resetBtn = document.querySelector("#reset-btn");
+// let newGameBtn = document.querySelector("#newBtm");
+// let msg = document.querySelector(".msg");
 
-let trunO = true;
-const winPatterns = [
-  [0, 1, 2],
-  [0, 3, 6],
-  [0, 4, 8],
-  [1, 4, 7],
-  [2, 5, 8],
-  [2, 4, 6],
-  [3, 4, 5],
-  [6, 7, 8],
-];
+// let trunO = true;
+// const winPatterns = [
+//   [0, 1, 2],
+//   [0, 3, 6],
+//   [0, 4, 8],
+//   [1, 4, 7],
+//   [2, 5, 8],
+//   [2, 4, 6],
+//   [3, 4, 5],
+//   [6, 7, 8],
+// ];
 
-boxes.forEach((box) => {
-  box.addEventListener("click", () => {
+// boxes.forEach((box) => {
+//   box.addEventListener("click", () => {
    
-    if (trunO) {
-      box.innerText = "O";
-      trunO = false;
-    } else {
-      box.innerText = "X";
-      trunO = true;
-    }
-    box.disabled = true;
-    checkWinner();
-  });
-});
+//     if (trunO) {
+//       box.innerText = "O";
+//       trunO = false;
+//     } else {
+//       box.innerText = "X";
+//       trunO = true;
+//     }
+//     box.disabled = true;
+//     checkWinner();
+//   });
+// });
 
 
 
-const checkWinner = () => {
-  for (let pattern of winPatterns) {
-    let pos1 = boxes[pattern[0]].innerText;
-    let pos2 = boxes[pattern[1]].innerText;
-    let pos3 = boxes[pattern[2]].innerText;
-    if (pos1 != "" && pos2 != "" && pos3 != "") {
-      if (pos1 === pos2 && pos2 === pos3) {
+// const checkWinner = () => {
+//   for (let pattern of winPatterns) {
+//     let pos1 = boxes[pattern[0]].innerText;
+//     let pos2 = boxes[pattern[1]].innerText;
+//     let pos3 = boxes[pattern[2]].innerText;
+//     if (pos1 != "" && pos2 != "" && pos3 != "") {
+//       if (pos1 === pos2 && pos2 === pos3) {
       
-        showWinner(pos1);
-      }
-    }
-  }
-};
-const disabledBoxes = () => {
-  for (let box of boxes) {
-    box.disabled = true;
-  }
-};
-const showWinner = (winner) => {
-  msg.innerText = `congratulation , winner is ${winner}`;
-  disabledBoxes();
-};
+//         showWinner(pos1);
+//       }
+//     }
+//   }
+// };
+// const disabledBoxes = () => {
+//   for (let box of boxes) {
+//     box.disabled = true;
+//   }
+// };
+// const showWinner = (winner) => {
+//   msg.innerText = `congratulation , winner is ${winner}`;
+//   disabledBoxes();
+// };
 
-const enableBoxes = () => {
-  for (let box of boxes) {
-    box.disabled = false;
-    box.innerText = "";
-  }
-};
-const resetGame = () => {
-  trunO = true;
-  enableBoxes();
-};
-newGameBtn.addEventListener("click", resetGame);
-resetBtn.addEventListener("click", resetGame);
+// const enableBoxes = () => {
+//   for (let box of boxes) {
+//     box.disabled = false;
+//     box.innerText = "";
+//   }
+// };
+// const resetGame = () => {
+//   trunO = true;
+//   enableBoxes();
+// };
+// newGameBtn.addEventListener("click", resetGame);
+// resetBtn.addEventListener("click", resetGame);
+let grade = 'B';
+let result;
+switch (grade) {
+    case 'A':
+        result = "A (Excellent)";
+        break;
+    case 'B':
+        result = "B (Average)";
+        break;
+    case 'C':
+        result = "C (Below than average)";
+        break;
+    default:
+        result = "No Grade";
+}
+console.log(result);
+let day = 3;
+let dayName;
+
+switch (day) {
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break;
+    case 6:
+        dayName = "Saturday";
+        break;
+    case 7:
+        dayName = "Sunday";
+        break;
+    default:
+        dayName = "Invalid day";
+}
+
+console.log(dayName);
