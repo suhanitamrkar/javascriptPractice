@@ -55,7 +55,6 @@
 //   });
 // });
 
-
 //Promises
 // let promise = new Promise((resolve,reject) =>{
 //     console.log('I am a promise');
@@ -70,7 +69,7 @@
 //             if (getnextData) {
 //                 getnextData()
 //             }
-            
+
 //          }, 2000);
 //      })
 //  }
@@ -81,9 +80,9 @@
 //     console.log(res);
 //     getData(2).then((res)=>{
 //         console.log('success');
-        
+
 //     })
-    
+
 //  })
 
 //  //this is second way
@@ -92,7 +91,6 @@
 //  }).then((res)=>{
 //     return getData(3)
 //  })
-
 
 // function asyncfunc(){
 //     return new Promise((resolve,reject) =>{
@@ -107,14 +105,14 @@
 // let p1 = asyncfunc()
 // p1.then((res)=>{
 //     console.log(res);
-    
+
 // })
 
 // console.log('hello');
 
 // async function hello(params) {
 //     console.log('hello');
-    
+
 // }
 // function api(){
 //     return new Promise ((resolve,reject)=>{
@@ -126,7 +124,7 @@
 // }
 // async function getWheatherData(){
 // await api()
-// } 
+// }
 // const URL= 'https://cat-fact.herokuapp.com/users'
 // let promise =  fetch(URL)
 // console.log('promise',promise);
@@ -148,12 +146,107 @@
 // console.log(is_array([1,2,3,4,0]))
 // console.log('hiih thifgfdg');
 
-let n =5
-let string = ''
-for (let i = 0; i < n; i++) {
-    for(let j = 0;j<n;j++){
-        string += '*'
-    }
-    string += '\n'
+//loops for stat pattern
+// let n =5
+// let string = ''
+// for (let i = 0; i < n; i++) {
+//     for(let j = 0;j<n;j++){
+//         string += '*'
+//     }
+//     string += '\n'
+// }
+// console.log(string);
+
+// let n = 5;
+// let string = "";
+// for (let i = 0; i < n; i++) {
+//   for (let j = 0; j < n; j++) {
+//     if (i === 0 || i === n - 1) {
+//       string += "*";
+//     } else {
+//       if (j === 0 || j === n - 1) {
+//         string += "*";
+//       } else {
+//         string += "";
+//       }
+//     }
+//   }
+//   string += "\n";
+// }
+// console.log(string);
+
+// let n = 5;
+// let string = "";
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 0; j < n - i; j++) {
+//     string += "";
+//   }
+//   for (let k = 0; k < i; k++) {
+//     string += "*";
+//   }
+//   string += "\n";
+// }
+// console.log(string);
+
+//  let n = 5
+//  let string = ''
+//  for(let i =1; i < n; i++){
+//     for(let j = 0; j - n-i; j++){
+//         string += '*'
+//     }
+//     string += '\n'
+//  }
+//  console.log(string);
+
+//true ? alert('Condition is true'): alert('condition is false')
+// 10 > 5 ? console.log('Yes 10 > 0'): console.log('No');
+// ;
+// let age = 25
+// let canDrink = (age > 18) ? 'Yes':'no'
+// console.log(canDrink);
+
+let day = 5;
+let dayName;
+switch (day) {
+  case 1:
+    dayName = "Monday";
+    break;
+  case 2:
+    dayName = "Tuesday";
+    break;
+  case 3:
+    dayName = "Wednesday";
+    break;
+  case 4:
+    dayName = "Thursday";
+    break;
+  case 5:
+    dayName = "Friday";
+    break;
+  case 6:
+    dayName = "Saturday";
+    break;
+  case 7:
+    dayName = "Sunday";
+    break;
+  default:
+    dayName = "Invalid day";
 }
-console.log(string);
+console.log(dayName);
+
+let grade = "C";
+let result;
+switch (grade) {
+  case "A":
+    result = "A (Excellenet)";
+    break;
+  case "B":
+    result = "B (Averge)";
+    break;
+  case "C":
+    result = "C (Below than averge)";
+    break;
+  default:
+    result = "No Grade";
+}
+console.log(result);
