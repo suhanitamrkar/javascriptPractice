@@ -451,49 +451,139 @@
 // };
 // newGameBtn.addEventListener("click", resetGame);
 // resetBtn.addEventListener("click", resetGame);
-let grade = 'B';
-let result;
-switch (grade) {
-    case 'A':
-        result = "A (Excellent)";
-        break;
-    case 'B':
-        result = "B (Average)";
-        break;
-    case 'C':
-        result = "C (Below than average)";
-        break;
-    default:
-        result = "No Grade";
-}
-console.log(result);
-let day = 3;
-let dayName;
+// let grade = 'B';
+// let result;
+// switch (grade) {
+//     case 'A':
+//         result = "A (Excellent)";
+//         break;
+//     case 'B':
+//         result = "B (Average)";
+//         break;
+//     case 'C':
+//         result = "C (Below than average)";
+//         break;
+//     default:
+//         result = "No Grade";
+// }
+// console.log(result);
+// let day = 3;
+// let dayName;
 
-switch (day) {
-    case 1:
-        dayName = "Monday";
-        break;
-    case 2:
-        dayName = "Tuesday";
-        break;
-    case 3:
-        dayName = "Wednesday";
-        break;
-    case 4:
-        dayName = "Thursday";
-        break;
-    case 5:
-        dayName = "Friday";
-        break;
-    case 6:
-        dayName = "Saturday";
-        break;
-    case 7:
-        dayName = "Sunday";
-        break;
-    default:
-        dayName = "Invalid day";
-}
+// switch (day) {
+//     case 1:
+//         dayName = "Monday";
+//         break;
+//     case 2:
+//         dayName = "Tuesday";
+//         break;
+//     case 3:
+//         dayName = "Wednesday";
+//         break;
+//     case 4:
+//         dayName = "Thursday";
+//         break;
+//     case 5:
+//         dayName = "Friday";
+//         break;
+//     case 6:
+//         dayName = "Saturday";
+//         break;
+//     case 7:
+//         dayName = "Sunday";
+//         break;
+//     default:
+//         dayName = "Invalid day";
+// }
 
-console.log(dayName);
+// console.log(dayName);
+
+// const fruit = "Mango";
+ 
+// switch (fruit) {
+//     case "Apple":
+//         console.log("Apple is healthy for our body");
+//         break;
+//     case "Mango":
+//         console.log("Mango is a National fruit of India");
+//         break;
+//     default:
+//         console.log("I don't like fruits.");
+// }
+
+
+
+//Break statement
+// const fruit = "Apple";
+ 
+// switch (fruit) {
+//     case "Apple":
+//         console.log("Apple is healthy for our body");
+//     case "Mango":
+//         console.log("Mango is a National fruit of India");
+//         break;
+//     default:
+//         console.log("I don't like fruits.");
+// }
+
+// for (let i = 1; i < 6; i++) {
+//     if (i == 4) break;
+//     console.log(i);
+
+
+//continue
+// for (let i = 0; i < 11; i++) {
+//     if (i % 2 == 0) continue;
+//     console.log(i);
+// }
+
+// try {
+//     throw new TypeError("oops");
+//   } catch ({ name, message }) {
+//     console.log(name); // "TypeError"
+//     console.log(message); // "oops"
+//   }
+
+//   class Alien {
+//     constructor (name ,phrase){
+//       this.name = name
+//       this.phrase = phrase
+//       this.species = 'alien'
+//     }
+//     fly = () => console.log('ZZZZzzzzzziiiiiiiinnnnnnngggg');
+//     sayPhrase = () => console.log(this.phrase);
+    
+//   }
+//   class Bug {
+//     constructor (name,phrase){
+//       this.name = name
+//       this.phrase = phrase
+//       this.species = 'bug'
+//     }
+//     hide = () => console.log('You cant catch me now!');
+//     sayPhrase = () => console.log(this.phrase);
+    
+//   }
+//   class Robot {
+//     constructor (name ,phrase){
+//       this.name
+//       this.phrase
+//       this.species = 'robot'
+//     }
+//     trasform =()=> console.log('Optimus prime!');
+//     sayPhrase = () => console.log(this.phrase);
+    
+    
+//   }
+// console.log("hello suhani");
+// async function myFunction (){
+//   return "hellow"
+// }
+// const getData = async () =>{
+//   let data = "Hello World"
+//   return data
+// }
+// getData().then(data => console.log(data)
+// )
+// const element = document.getElementById("heading")
+// document.getElementById()
