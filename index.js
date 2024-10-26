@@ -587,3 +587,15 @@
 // )
 // const element = document.getElementById("heading")
 // document.getElementById()
+function myFirst (){
+    myDisplayer("Hello")
+}
+function mySecond (){
+    myDisplayer("Goodbye")
+}
+let a = mySecond()
+console.log(a);
+
+mySecond()
+myFirst()
+console.log('suhani');

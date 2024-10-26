@@ -13,7 +13,7 @@
     <div class="container">
       <p id="intro">A Computer Science portal for geeks.</p>
       <h1 id="heading">This is suhani</h1>
-      <p id="demo"></p>
+      <p id="demo">dfsdfsdf</p>
     </div>
     <div class="bg-[#677D6A] h-[600px]">
       <h1 class="text-center text-4xl font-bold py-5">Tic-Tac-Toe</h1>
@@ -71,13 +71,64 @@
     </div>
 
     <script>
-      const element = (document.getElementById("intro").style.backgroundColor =
-        "yellow");
-        document.getElementById("heading").onclick = function(){
-          alert('hello you clicek')
-        }
-      document.getElementById("demo").innerHTML =
-        "GeeksforGeeks introduction is:" + element.innerHTML;
+//    function myFirst (){
+//   console.log("Hello");
+  
+// }
+// function mySecond (){
+//   console.log('Goodbye');
+  
+// }
+// mySecond()
+// myFirst()
+// function myDisplayer(some){
+//   document.getElementById('demo').innerHTML = some
+// }
+// function myCalculator(num1,num2){
+//   let sum = num1 + num2
+//   return sum
+//   myCallback(sum)
+// }
+// myCalculator(3,5,myDisplayer)
+// let result = myCalculator(4,3)
+// console.log(result);
+//  function myDisplayer(something){
+//   document.getElementById('demo').innerHTML = something
+// }
+//  function myCalculator(num1,num2,myCallback){
+//    let sum = num1 + num2
+   
+//    myCallback(sum)
+//  }
+ 
+// console.log(myCalculator(3,2,myDisplayer));
+// setTimeout(myFunction,3000)
+// function myFunction(){
+//   document.getElementById("demo").innerHTML='Hello'
+// }
+let rows = prompt("Please enter" ,"")
+printPatter(rows)
+function printPatter(rows){
+  //increase 
+  for (let i = 1; i <= rows; i++) {
+    for (let j = 1; j <= i ; j++) {
+    document.write('*')
+      
+    }
+    document.write('<br/>')
+    
+  }
+  //for decrease
+  for (let i = rows; i >= 1; i--) {
+     for (let j = 1; j <= i ; j++) {
+     document.write('*')
+      
+    }
+    document.write('<br/>')
+    
+   }
+// document.write(rows)
+}
     </script>
   </body>
 </html>
